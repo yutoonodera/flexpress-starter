@@ -1,0 +1,32 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+.react-calendar__tile.has-post {
+    @apply bg-yellow-400 rounded-full font-bold text-black;
+  }
+  .react-calendar__tile.selected-post {
+    @apply bg-blue-500 rounded-full font-bold text-white;
+  }
+
+.tech-grid {
+  background-color: #0f172a; /* slate-900 */
+  background-image:
+    radial-gradient(#3b82f6 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size:
+    18px 18px, /* dot */
+    40px 40px, /* vertical line */
+    40px 40px; /* horizontal line */
+}
+
+.flexpress-bg {
+  background:
+    radial-gradient(circle at center, rgba(255,179,71,0.35), transparent 70%),
+    radial-gradient(circle at top left, rgba(255,137,137,0.3), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(255,214,102,0.3), transparent 60%);
+  background-color: #fff7ed; /* orange-50 */
+}

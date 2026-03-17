@@ -1,0 +1,78 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+      args:
+        # WORDPRESS_API_URL: ${WORDPRESS_API_URL}
+        NEXT_PUBLIC_DLOG_CAT_ID: ${NEXT_PUBLIC_DLOG_CAT_ID}
+        NEXT_PUBLIC_TECHBLOG_CAT_ID: ${NEXT_PUBLIC_TECHBLOG_CAT_ID}
+        NEXT_PUBLIC_FLEXPRESS_CAT_ID: ${NEXT_PUBLIC_FLEXPRESS_CAT_ID}
+    env_file:
+      - .env.production
+    environment:
+      - NODE_ENV=production
+      - WORDPRESS_API_URL=http://wordpress:80
+    depends_on:
+      - wordpress
+    networks:
+      - app-network
+
+  wordpress:
+    image: wordpress:6.6-php8.2-apache
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: ${PROD_MYSQL_PASSWORD}
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_SITEURL: https://wp.movee.jp
+      WORDPRESS_HOME: https://wp.movee.jp
+    volumes:
+      - wordpress_data:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PROD_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: ${PROD_MYSQL_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  https-portal:
+    image: steveltn/https-portal:1
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAINS: >
+        movee.jp -> http://web:3000,
+        wp.movee.jp -> http://wordpress:80
+      STAGE: staging   # ← staging のときは "staging" にすると Let's Encrypt のレート制限回避できる
+      HTTPS_METHOD: redirect #redirect入れなくてもhttpsにならないといけないがなっていない
+      FORCE_RENEW: "true" # 強制更新したいとき
+    volumes:
+      - https-portal-data:/var/lib/https-portal
+    depends_on:
+      - web
+      - wordpress
+    networks:
+      - app-network
+
+volumes:
+  wordpress_data:
+  db_data:
+  https-portal-data:
+
+networks:
+  app-network:
+    driver: bridge

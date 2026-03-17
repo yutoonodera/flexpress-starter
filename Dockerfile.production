@@ -1,0 +1,27 @@
+FROM node:20-alpine
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install --legacy-peer-deps
+RUN apk add --no-cache curl
+
+# 設定ファイル類をコピー
+COPY tailwind.config.js postcss.config.js next.config.js tsconfig.json ./
+# ソースコードをコピー
+COPY app ./app
+COPY src ./src
+COPY public ./public
+
+#ARG WORDPRESS_API_URL
+ARG NEXT_PUBLIC_TECHBLOG_CAT_ID
+ARG NEXT_PUBLIC_DLOG_CAT_ID
+ARG NEXT_PUBLIC_FLEXPRESS_CAT_ID
+#ENV WORDPRESS_API_URL=$WORDPRESS_API_URL
+ENV NEXT_PUBLIC_TECHBLOG_CAT_ID=$NEXT_PUBLIC_TECHBLOG_CAT_ID
+ENV NEXT_PUBLIC_DLOG_CAT_ID=$NEXT_PUBLIC_DLOG_CAT_ID
+ENV NEXT_PUBLIC_FLEXPRESS_CAT_ID=$NEXT_PUBLIC_FLEXPRESS_CAT_ID
+RUN npm run build --no-lint
+
+EXPOSE 3000
+CMD ["npm", "run", "start", "--", "-p", "3000", "-H", "0.0.0.0"]
+
