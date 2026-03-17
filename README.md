@@ -1,6 +1,14 @@
 # FlexPress Starter
 
-A Next.js + Headless WordPress starter kit for content-heavy business websites.
+> A starter kit for companies that update their website frequently.
+
+Next.js + Headless WordPress starter kit for content-heavy business websites.
+
+---
+
+🇯🇵 → [README.ja.md](./README.ja.md)
+
+---
 
 ## Features
 - Next.js (App Router)
@@ -12,7 +20,6 @@ A Next.js + Headless WordPress starter kit for content-heavy business websites.
 
 ```bash
 docker compose -f docker-compose.local.yml up
-```
 ## site
 http://localhost:3000/
 
