@@ -11,5 +11,4 @@ A Next.js + Headless WordPress starter kit for content-heavy business websites.
 ## Getting Started
 
 ```bash
-npm install
-npm run dev
+docker compose -f docker-compose.local.yml up
