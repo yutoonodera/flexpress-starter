@@ -12,3 +12,10 @@ A Next.js + Headless WordPress starter kit for content-heavy business websites.
 
 ```bash
 docker compose -f docker-compose.local.yml up
+```
+## site
+http://localhost:3000/
+
+http://localhost:8000/
+
+<img width="1283" height="811" alt="image" src="https://github.com/user-attachments/assets/efdf1161-157d-49d4-a91b-6a518980766a" />
