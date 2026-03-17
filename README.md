@@ -9,7 +9,24 @@ Next.js + Headless WordPress starter kit for content-heavy business websites.
 🇯🇵 → [README.ja.md](./README.ja.md)
 
 ---
+## Use Cases
 
+FlexPress Starter is designed for businesses that frequently update their website.
+
+### 🏢 Real Estate Agencies
+- Property listings
+- News / updates
+- Area-based content
+
+### 🏬 Multi-Location Businesses
+- Store listings
+- Campaign / announcements
+- Location-based pages
+
+### 📰 Media & Content Sites
+- Blog / articles
+- Category & tag management
+- SEO-focused content structure
 ## Features
 - Next.js (App Router)
 - Headless WordPress
