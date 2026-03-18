@@ -12,7 +12,7 @@ export default function Footer() {
       [
         { label: "立場から選ぶ", href: "/services/software/roles" },
         { label: "目的から選ぶ", href: "/services/software/purpose" },
-        { label: "社員募集", href: "/recruit" },
+        { label: "Recruit", href: "/recruit" },
         { label: "D.log", href: "/dlog" },
         { label: "お問い合わせ", href: "/contact" },
         { label: "特定商取引法に基づく表記", href: "/legal/asct" },
