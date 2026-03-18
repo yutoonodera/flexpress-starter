@@ -73,6 +73,7 @@ FlexPress Starter is designed for businesses that frequently update their websit
 
 ```bash
 docker compose -f docker-compose.local.yml up -d --build
+```
 
 ## site
 http://localhost:3000/
