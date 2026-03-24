@@ -8,7 +8,6 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "はじまりをつくる", href: "/make-start" },
     { label: "拡張型セキュアWP", href: "/flexpress" },
     { label: "立場から選ぶ", href: "/services/software/roles" },
     { label: "目的から選ぶ", href: "/services/software/purpose" },
@@ -23,7 +22,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* ロゴ */}
         <div className="text-xl font-bold">
-          <Link href="/">株式会社movee|モビー</Link>
+          <Link href="/">Acme Corp</Link>
         </div>
 
         {/* PCナビ */}

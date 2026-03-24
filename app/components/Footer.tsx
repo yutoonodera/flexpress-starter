@@ -2,8 +2,7 @@
 export default function Footer() {
     const footerLinks: { label: string; href: string }[][] = [
       [
-        { label: "株式会社movee|モビー", href: "/" },
-        { label: "はじまりをつくる", href: "/make-start" },
+        { label: "Acme Corp", href: "/" },
         { label: "FlexPress-拡張型セキュアWP", href: "/flexpress" },
         { label: "FrexPress機能ガイド", href: "/flexpress/guide" },
         { label: "弊サイト構成", href: "/system-diagram" },
@@ -14,7 +13,7 @@ export default function Footer() {
         { label: "目的から選ぶ", href: "/services/software/purpose" },
         { label: "Recruit", href: "/recruit" },
         { label: "D.log", href: "/dlog" },
-        { label: "contact", href: "/contact" },
+        { label: "Contact", href: "/contact" },
         { label: "特定商取引法に基づく表記", href: "/legal/asct" },
       ],
     ];
