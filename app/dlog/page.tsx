@@ -143,7 +143,7 @@ export default function OnodyLogPage() {
               alt="代表 小野寺祐人"
               className="w-24 h-24 rounded-full object-cover mx-auto mb-3 opacity-90"
             />
-            <p className="text-sm font-medium">株式会社movee 代表</p>
+            <p className="text-sm font-medium">Acme Corp</p>
             <p className="text-gray-800 font-semibold">小野寺 祐人</p>
           </div>
         </div>

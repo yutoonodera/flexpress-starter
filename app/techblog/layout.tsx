@@ -1,8 +1,8 @@
 // app/layout.tsx
 
 export const metadata = {
-  title: 'Techblog|株式会社movee',
-  description: '福岡のソフトウェア開発、株式会社movee|モビーのTechblogです',
+  title: 'Techblog|Acme Corp',
+  description: '福岡のソフトウェア開発、Acme Corp|モビーのTechblogです',
   robots: process.env.NEXT_PUBLIC_ENV === "staging" ? "noindex,nofollow" : "index,follow",
   icons: {
     icon: "/techblog/favicon.ico",
