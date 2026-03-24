@@ -31,7 +31,7 @@ export default function PostsChart() {
       <p className="text-sm text-gray-500 mb-6">
        （
         <Link href="/techblog" className="text-blue-600 hover:underline">
-          テックブログ
+          Techblog
         </Link>、
         <Link href="/dlog" className="text-blue-600 hover:underline">
           D.log

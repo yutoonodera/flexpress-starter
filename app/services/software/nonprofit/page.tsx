@@ -77,7 +77,7 @@ export default function NonprofitSupportPage() {
                 href="/contact"
                 className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
               >
-                お問い合わせ
+                Contact
               </a>
               <a
                 href="mailto:info@movee.jp"

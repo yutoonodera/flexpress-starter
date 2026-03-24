@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     const msg = {
       to: "info@movee.jp",
       from: "info@movee.jp", // SendGridで認証済みメール
-      subject: `お問い合わせ: ${name}`,
+      subject: `contact: ${name}`,
       text: `お名前: ${name}\nメール: ${email}\n内容:\n${message}`,
       html: `<p><strong>お名前:</strong> ${name}</p>
              <p><strong>メール:</strong> ${email}</p>

@@ -148,7 +148,7 @@ export default function OnodyLogPage() {
           </div>
         </div>
 
-        {/* 🔽 お問い合わせ導線セクション */}
+        {/* contact */}
         <div className="mt-20 mb-20">
           <div className="max-w-2xl mx-auto text-center bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-10">
             <div className="flex justify-center mb-4">
@@ -172,7 +172,7 @@ export default function OnodyLogPage() {
               href="/contact"
               className="inline-block bg-black text-white px-10 py-3 rounded-xl hover:bg-gray-800 transition"
             >
-              お問い合わせはこちら
+              Contact is here
             </a>
           </div>
         </div>

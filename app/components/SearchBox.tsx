@@ -11,7 +11,7 @@ export default function SearchBox({ value, onChange }: Props) {
     <div className="mb-8">
       <input
         type="text"
-        placeholder="タイトルで検索"
+        placeholder="Search by Title"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         onBlur={(e) => onChange(value.trim())}

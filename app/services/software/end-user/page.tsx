@@ -76,7 +76,7 @@ export default function SoftwareIntroPage() {
   const steps = [
     {
       icon: <ChatBubbleBottomCenterTextIcon className="h-8 w-8 text-blue-600" />,
-      title: "お問い合わせ",
+      title: "contact",
       description: "まずは課題・ご要望をお聞かせください。アイデア段階でもOKです。",
     },
     {
@@ -200,7 +200,7 @@ export default function SoftwareIntroPage() {
                 href="/contact"
                 className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
               >
-                お問い合わせ
+                contact
               </a>
               <a
                 href="mailto:info@movee.jp"

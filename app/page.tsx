@@ -20,8 +20,8 @@ export default function HomePage() {
       title: "その他",
       description:
         "開発以外にも、「こんなことできる？」というご相談を歓迎しています。まずはお気軽にお話しください。",
-        href: "/contact", // ← 「お問い合わせ」ページに変更
-        buttonText: "お問い合わせはこちら",
+        href: "/contact", // ← 「contact」ページに変更
+        buttonText: "Contactはこちら",
     },
   ];
 
@@ -120,7 +120,7 @@ export default function HomePage() {
         href="/techblog"
         className="text-blue-600 text-xl font-semibold hover:underline inline-block"
       >
-        テックブログ
+        Techblog
       </a>
       <p className="text-gray-500 text-sm mt-2">
         技術検証や実験的な投稿

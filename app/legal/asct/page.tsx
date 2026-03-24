@@ -137,7 +137,7 @@ export default function AsctPage() {
               <a href="mailto:info@movee.jp" className="text-blue-600 underline">
                 info@movee.jp
               </a>{" "}
-              ／ お問い合わせフォーム：<a href="/contact" className="text-blue-600 underline">/contact</a>
+              ／ contact：<a href="/contact" className="text-blue-600 underline">/contact</a>
             </dd>
           </div>
 

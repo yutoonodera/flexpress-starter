@@ -36,11 +36,13 @@ export default function HomePage() {
    <main className="p-6 font-sans max-w-5xl mx-auto">
     <div className="tech-grid min-h-screen p-8 rounded-3xl shadow-xl bg-slate-900/60 backdrop-blur">
       <h1 className="text-3xl font-bold mb-6 text-white">
-        テックブログ
+        Techblog
       </h1>
 
       <p className="text-sm mb-6 text-white">
-        株式会社movee（モビー）のエンジニアが書いています
+        This page displays WordPress posts based on their category ID.
+        Please match the ID in app/api/techposts/route.ts with the category ID of the posts you want to display.
+        For example, if the category ID is 10 in the WordPress admin panel, set techCatId to 10.
       </p>
 
       {/* 検索窓 */}
@@ -60,7 +62,7 @@ export default function HomePage() {
 
       {!loading && filteredPosts.length === 0 && (
         <p className="col-span-full text-center text-gray-500">
-          該当する記事がありません
+          No matching articles found.
         </p>
       )}
       </div>

@@ -43,9 +43,9 @@ export default function ContactPage() {
     <>
     <Header />
     <main className="max-w-2xl mx-auto p-6 font-sans">
-      <h1 className="text-3xl font-bold mb-6">お問い合わせ</h1>
+      <h1 className="text-3xl font-bold mb-6">Contact</h1>
       <p className="text-gray-600 mb-8">
-        ご質問やご相談など、お気軽にご連絡ください。
+        Feel free to contact us with any questions or inquiries.
       </p>
 
       <form
@@ -53,7 +53,7 @@ export default function ContactPage() {
         className="space-y-6 bg-white p-6 rounded-2xl shadow-md"
       >
         <div>
-          <label className="block text-sm font-medium mb-2">お名前</label>
+          <label className="block text-sm font-medium mb-2">Name</label>
           <input
             type="text"
             value={name}
@@ -64,7 +64,7 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-2">メールアドレス</label>
+          <label className="block text-sm font-medium mb-2">Email</label>
           <input
             type="email"
             value={email}
@@ -75,7 +75,7 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-2">お問い合わせ内容</label>
+          <label className="block text-sm font-medium mb-2">Contents</label>
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -90,7 +90,7 @@ export default function ContactPage() {
           disabled={loading}
           className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition disabled:opacity-50"
         >
-          {loading ? "送信中..." : "送信する"}
+          {loading ? "Sending..." : "Submit"}
         </button>
       </form>
 
@@ -98,12 +98,12 @@ export default function ContactPage() {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-xl shadow-lg max-w-sm text-center">
-            <p className="mb-4">お問い合わせを送信しました！</p>
+            <p className="mb-4">Your message has been sent!</p>
             <button
               onClick={() => setIsModalOpen(false)}
               className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
             >
-              閉じる
+              Close
             </button>
           </div>
         </div>

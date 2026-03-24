@@ -114,7 +114,7 @@ export default function ConsultingServicePage() {
             href="/contact"
             className="inline-block rounded-xl bg-blue-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
           >
-            お問い合わせ
+            contact
           </Link>
         </motion.div>
       </section>
