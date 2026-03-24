@@ -13,9 +13,9 @@ export default function Header() {
     { label: "立場から選ぶ", href: "/services/software/roles" },
     { label: "目的から選ぶ", href: "/services/software/purpose" },
     { label: "弊サイト構成", href: "/system-diagram" },
-    { label: "テックブログ", href: "/techblog" },
+    { label: "Techblog", href: "/techblog" },
     { label: "Recruit", href: "/recruit" },
-    { label: "お問い合わせ", href: "/contact" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (

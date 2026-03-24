@@ -59,7 +59,7 @@ export default function HomePage() {
 
       {!loading && filteredPosts.length === 0 && (
         <p className="col-span-full text-center text-gray-500">
-          該当する記事がありません
+          No matching articles found.
         </p>
       )}
       </div>

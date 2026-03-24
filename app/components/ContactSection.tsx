@@ -25,7 +25,7 @@ export default function ContactSection() {
         href="/contact"
         className="inline-block bg-black text-white py-3 px-6 rounded-full shadow-md hover:bg-gray-800 transition"
       >
-        お問い合わせ
+        contact
       </Link>
     </section>
   );

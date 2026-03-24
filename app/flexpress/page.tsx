@@ -268,7 +268,7 @@ export default function FlexPressPage() {
               href="/contact"
               className="flex-shrink-0 rounded-full bg-blue-500 px-5 py-2 text-sm font-semibold text-white shadow hover:bg-blue-600"
             >
-              ご相談・お問い合わせ
+              Contact
             </Link>
 
             <Link

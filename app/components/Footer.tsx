@@ -7,14 +7,14 @@ export default function Footer() {
         { label: "FlexPress-拡張型セキュアWP", href: "/flexpress" },
         { label: "FrexPress機能ガイド", href: "/flexpress/guide" },
         { label: "弊サイト構成", href: "/system-diagram" },
-        { label: "テックブログ", href: "/techblog" },
+        { label: "Techblog", href: "/techblog" },
       ],
       [
         { label: "立場から選ぶ", href: "/services/software/roles" },
         { label: "目的から選ぶ", href: "/services/software/purpose" },
         { label: "Recruit", href: "/recruit" },
         { label: "D.log", href: "/dlog" },
-        { label: "お問い合わせ", href: "/contact" },
+        { label: "contact", href: "/contact" },
         { label: "特定商取引法に基づく表記", href: "/legal/asct" },
       ],
     ];

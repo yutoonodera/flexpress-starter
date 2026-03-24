@@ -207,7 +207,7 @@ export default function RecognitionApproachPage() {
             href="/contact"
             className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
           >
-            お問い合わせはこちら
+            Contactはこちら
           </Link>
 
           <p className="mt-4 text-sm text-gray-500">
