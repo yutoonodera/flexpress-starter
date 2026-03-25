@@ -8,12 +8,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "拡張型セキュアWP", href: "/flexpress" },
-    { label: "立場から選ぶ", href: "/services/software/roles" },
-    { label: "目的から選ぶ", href: "/services/software/purpose" },
-    { label: "弊サイト構成", href: "/system-diagram" },
+    { label: "News", href: "/news" },
+    { label: "Service", href: "/service" },
+    { label: "Store", href: "/store" },
+    { label: "Sales", href: "/sale" },
+    { label: "blogs", href: "/blogs" },
     { label: "Techblog", href: "/techblog" },
+    { label: "D.log", href: "/dlog" },
     { label: "Recruit", href: "/recruit" },
+    { label: "History", href: "/history" },
     { label: "Contact", href: "/contact" },
   ];
 
