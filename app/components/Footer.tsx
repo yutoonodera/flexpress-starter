@@ -3,18 +3,18 @@ export default function Footer() {
     const footerLinks: { label: string; href: string }[][] = [
       [
         { label: "Acme Corp", href: "/" },
-        { label: "FlexPress-拡張型セキュアWP", href: "/flexpress" },
-        { label: "FrexPress機能ガイド", href: "/flexpress/guide" },
-        { label: "弊サイト構成", href: "/system-diagram" },
-        { label: "Techblog", href: "/techblog" },
+        { label: "News", href: "/news" },
+        { label: "Service", href: "/service" },
+        { label: "Store", href: "/store" },
+        { label: "Sales", href: "/sale" },
       ],
       [
-        { label: "立場から選ぶ", href: "/services/software/roles" },
-        { label: "目的から選ぶ", href: "/services/software/purpose" },
-        { label: "Recruit", href: "/recruit" },
+        { label: "blogs", href: "/blogs" },
+        { label: "Techblog", href: "/techblog" },
         { label: "D.log", href: "/dlog" },
+        { label: "Recruit", href: "/recruit" },
+        { label: "History", href: "/history" },
         { label: "Contact", href: "/contact" },
-        { label: "特定商取引法に基づく表記", href: "/legal/asct" },
       ],
     ];
 
